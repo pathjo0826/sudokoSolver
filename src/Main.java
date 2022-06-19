@@ -16,11 +16,11 @@ public class Main {
                 {0, 0, 7, 0, 4, 0, 2, 0, 3}
         };
 
-        System.out.println("Original Sudoko board");
+        System.out.println("Original Sudoko board:");
         printBoard(board);
 
         if (solveBoard(board)) {
-            System.out.println("Solved succesfully!");
+            System.out.println("\nSolved succesfully!");
             printBoard(board);
         } else {
             System.out.println("Impossible to solve");
