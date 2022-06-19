@@ -50,7 +50,7 @@ public class Main {
         /*
         Given a coordinate in the Sudoku grid, the formulas below will give the top left corner
         of the 3x3 grid that the coordinate is in. Try it!
-         */
+        */
 
         int localBoxRow = row - row % 3;
         int localBoxColumn = column - column % 3;
