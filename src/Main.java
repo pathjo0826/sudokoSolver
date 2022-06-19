@@ -47,6 +47,7 @@ public class Main {
     }
 
     private static boolean isNumberInBox(int[][] board, int number, int row, int column) {
+
         /*
         Given a coordinate in the Sudoku grid, the formulas below will give the top left corner
         of the 3x3 grid that the coordinate is in. Try it!
@@ -87,7 +88,7 @@ public class Main {
 
                             The else-statement resets the coordinates solveBoard() has filled in if it eventually runs into a
                             situation where it finds no valid placements.
-                             */
+                            */
 
                             if (solveBoard(board)) {
                                 return true;
@@ -96,10 +97,11 @@ public class Main {
                             }
                         }
                     }
+
                     /*
                     Returns false if all numbers 1-9 has been tried and no validPlacement has been found.
                     = Unsolvable board.
-                     */
+                    */
 
                     return false;
                 }
